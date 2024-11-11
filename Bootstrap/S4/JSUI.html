@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <h2>List in Javascript</h2>
+    <script>
+      //JS code to create Ordered List
+      function createOL() {
+        var ol = document.createElement("ol");
+
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+
+        li1.innerText = "HTML";
+        li2.innerText = "JS";
+        li3.innerText = "CSS";
+        li4.innerText = "React JS";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        document.querySelector("body").appendChild(ol);
+      }
+
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+    </script>
+  </body>
+</html>

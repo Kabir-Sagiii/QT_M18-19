@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <h2>Javascript</h2>
+
+    <script>
+      var btnDomElement = document.createElement("button");
+
+      btnDomElement.innerText = "Javascript Button";
+
+      document.querySelector("body").appendChild(btnDomElement);
+
+      function createOL() {
+        var ol = document.createElement("ol");
+
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+
+        li1.innerText = "Apple";
+        li2.innerText = "Samsung";
+        li3.innerText = "Vivo";
+        li4.innerText = "Oppo";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        document.querySelector("body").appendChild(ol);
+      }
+
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+    </script>
+  </body>
+</html>
