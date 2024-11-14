@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <script>
+      //React Code
+
+      var divReactElement = React.createElement(
+        "div",
+        {
+          id: "title",
+          className: "c1 c2",
+          style: {
+            color: "red",
+            backgroundColor: "black",
+            padding: "20px",
+          },
+        },
+        "React is Super Super easy"
+      );
+
+      ReactDOM.render(divReactElement, document.querySelector("body"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>h2,p in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      //h2,p
+      var h2 = React.createElement("h2", null, "React JS with Sagar");
+
+      var p = React.createElement(
+        "p",
+        null,
+        "React JS is a JS Library,Which seems to be Super Easy"
+      );
+
+      ReactDOM.render([p, h2, p, h2], document.getElementById("root"));
+    </script>
+  </body>
+</html>
