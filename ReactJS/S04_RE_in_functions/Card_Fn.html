@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        text-align: center;
+        width: 230px;
+      }
+      #mycontainer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <title>Card</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function createCard(username, url) {
+        var img = React.createElement("img", {
+          src: url,
+          width: "230",
+          height: "300",
+        });
+
+        var h3 = React.createElement("h3", null, username);
+
+        var div = React.createElement("div", { id: "card" }, [img, h3]);
+
+        return div;
+      }
+
+      function container() {
+        var divContainer = React.createElement("div", { id: "mycontainer" }, [
+          createCard(
+            "Yash Verma",
+            "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d"
+          ),
+          createCard(
+            "Soniya Sharma",
+            "https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/professional_headshots_tampa_011.jpg"
+          ),
+          createCard(
+            "Riya Singh",
+            "https://th.bing.com/th/id/R.ff372839fa5e954f6f489108e92baf29?rik=ejBXQwBlGLy%2fvw&riu=http%3a%2f%2fpeggynoestevens.com%2fwp-content%2fuploads%2f2012%2f11%2fBusiness-Woman-Image-Website.jpg&ehk=6qWdJljrOqC4qPBg1p9XVvM0H18t9%2bPzziZx7yoiR94%3d&risl=&pid=ImgRaw&r=0"
+          ),
+          createCard(
+            "Sameer Khan",
+            "https://c.pxhere.com/photos/08/7a/male_portrait_profile_social_media_cv_young_elegant_suit-459413.jpg!d"
+          ),
+        ]);
+
+        return divContainer;
+      }
+
+      ReactDOM.render(container(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
