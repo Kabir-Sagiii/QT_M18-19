@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createH2(title) {
+        return <h2>{title}</h2>;
+      }
+
+      //   ReactDOM.render(createH2(), document.getElementById("root"));
+
+      ReactDOM.render(
+        [createH2("React JS"), createH2("Node JS")],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

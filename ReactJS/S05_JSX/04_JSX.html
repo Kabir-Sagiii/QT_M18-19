@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createImage() {
+        return (
+          <img
+            src="https://th.bing.com/th/id/R.ff372839fa5e954f6f489108e92baf29?rik=ejBXQwBlGLy%2fvw&riu=http%3a%2f%2fpeggynoestevens.com%2fwp-content%2fuploads%2f2012%2f11%2fBusiness-Woman-Image-Website.jpg&ehk=6qWdJljrOqC4qPBg1p9XVvM0H18t9%2bPzziZx7yoiR94%3d&risl=&pid=ImgRaw&r=0"
+            width="300"
+            height="300"
+            alt="img"
+          />
+        );
+      }
+
+      ReactDOM.render(
+        [createImage(), createImage(), createImage()],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

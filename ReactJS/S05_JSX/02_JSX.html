@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var h2 = <h2>JSX heading element</h2>;
+      const p = <p> JSX is looking super kool</p>;
+      let button = <button>React JSX </button>;
+
+      ReactDOM.render(
+        [h2, p, button, h2, button, p],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
