@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        padding: 10px;
+        box-shadow: 0 0 10px red;
+        text-align: center;
+      }
+      #app {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <title></title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Card(props) {
+        return (
+          <div id="card">
+            <img src={props.url} width="100%" height="200" />
+            <h3>{props.username}</h3>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div id="app">
+            <Card
+              username={"Dinesh K"}
+              url="https://i0.wp.com/www.primesworld.com/wp-content/uploads/Dinesh-Karthik.jpg?resize=1200%2C800&ssl=1"
+            />
+            <Card
+              username={"Virat K"}
+              url={
+                "https://crickettimes.com/wp-content/uploads/2023/10/Virat-Kohli-fans-trend-Boycott-Dainik-Jagran-and-burn-newspapers-in-protest.webp"
+              }
+            />
+            <Card
+              username={"Rohit S"}
+              url={
+                "https://staticg.sportskeeda.com/editor/2023/09/2ca8d-16958258246745-1920.jpg"
+              }
+            />
+            <Card
+              username={"Smriti M"}
+              url={
+                "https://www.globalindian.com/youth/wp-content/uploads/2022/07/card_smriti_india.jpg"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
