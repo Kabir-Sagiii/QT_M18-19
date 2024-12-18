@@ -1,0 +1,18 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 270px;
+  background-color: black;
+  color: cornsilk;
+  height: 380px;
+  box-shadow: 0 0 10px red;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+  text-align: center;
+}

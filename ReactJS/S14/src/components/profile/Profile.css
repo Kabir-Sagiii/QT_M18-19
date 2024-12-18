@@ -1,0 +1,18 @@
+.profile {
+  width: 1000px;
+  box-shadow: 0 0 10px black;
+  height: 400px;
+  margin: 50px auto;
+  display: flex;
+}
+.left {
+  width: 30%;
+}
+.right {
+  width: 70%;
+  padding: 20px;
+}
+.right button {
+  margin-right: 30px;
+  padding: 7px 30px;
+}
