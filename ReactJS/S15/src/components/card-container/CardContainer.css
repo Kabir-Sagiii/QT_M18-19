@@ -1,0 +1,27 @@
+.cardContainer {
+  padding: 50px;
+}
+.cardContainer h2,
+p {
+  margin-bottom: 20px;
+}
+.nouser {
+  text-align: center;
+  margin-top: 20px;
+  color: red;
+  font-size: 42px;
+}
+
+.containerCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.filterUser {
+  margin-top: 50px;
+  text-align: center;
+}
+.filterUser select {
+  padding: 10px 30px;
+}
