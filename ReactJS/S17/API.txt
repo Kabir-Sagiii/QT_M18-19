@@ -1,0 +1,16 @@
+50  Users Info
+---------------
+url : "https://randomuser.me/api/?results=50",
+method type:"GET",
+data format: {"result":[{},{},{}]}
+
+Users Data based on gender 
+---------------------------
+url : "https://randomuser.me/api/?gender=<gender value>&results=50"
+method type: "GET",
+data format : {result:[{},{}]}
+
+Electronics
+-----------
+api : "http://localhost:3000/electronics",
+method:GET
