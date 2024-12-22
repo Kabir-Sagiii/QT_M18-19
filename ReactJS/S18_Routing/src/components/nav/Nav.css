@@ -1,0 +1,23 @@
+.navContainer {
+  height: 75px;
+  background-color: black;
+  display: flex;
+}
+.leftPanel {
+  color: white;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightPanel {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightPanel a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: white;
+}

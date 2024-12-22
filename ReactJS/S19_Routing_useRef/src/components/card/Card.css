@@ -1,0 +1,23 @@
+.card {
+  width: 300px;
+  background-color: black;
+  color: white;
+
+  box-shadow: 0 0 10px red;
+  margin: 30px;
+
+  padding: 10px;
+  text-align: center;
+}
+.card button {
+  padding: 7px 20px;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 0 0 10px white;
+}
+.card img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
