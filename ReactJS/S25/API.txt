@@ -1,0 +1,29 @@
+useReducer hook documentation
+-----------------------------
+https://react.dev/reference/react/useReducer
+
+
+https://18.react.dev/learn/extracting-state-logic-into-a-reducer#comparing-usestate-and-usereducer
+
+
+50  Users Info
+---------------
+url : "https://randomuser.me/api/?results=50",
+method type:"GET",
+data format: {"result":[{},{},{}]}
+
+Users Data based on gender 
+---------------------------
+url : "https://randomuser.me/api/?gender=<gender value>&results=50"
+method type: "GET",
+data format : {result:[{},{}]}
+
+Electronics
+-----------
+api : "http://localhost:3000/electronics",
+method:GET
+
+Specific Product Info
+-----------------------
+url : http://localhost:3000/products/<id>
+method:GET

@@ -1,0 +1,39 @@
+Promise Video:
+-------------------
+https://youtu.be/ialfZyeAbaY?si=z2SeCPNR1UIXRZTv
+
+Strings in JavaScript
+---------------------------
+https://www.youtube.com/watch?v=y1skr4DXPnI&list=PLRflkniRZt7_W3qhw0IInqxg7cOvMPPVz&index=2
+
+
+useEffect() Video
+-----------------------
+Part-1 : https://youtu.be/2UpyWRfigME?si=nZXGgB6ApBxizbhw
+
+
+Part - 2 : https://youtu.be/s0Os0M9xhGE?si=2h7sfRK9UV4mlrb5
+
+
+useParams, useSearchParams, ProtectedRoutes
+----------------------------------------------------------------
+https://youtu.be/dBEZdF1zHPc?si=GfwsgvwwzBrUYTYy
+
+
+Lifecycle Methods
+-----------------------
+https://youtu.be/3C2QNdPDIi8?si=1-JooVUwlc3PSIWn
+
+React Portals
+--------------
+https://drive.google.com/file/d/1BbgJ3yQpGy27SBS3L7BLun-E6fSlfWjv/view?usp=sharing
+
+Error Boundaries
+-----------------------
+https://drive.google.com/file/d/1-Anb4i_3tYx86qkhKIqiSh-BSYYdIoDQ/view?usp=sharing
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+.products {
+  color: red;
+}
+.adProductsContainer {
+  height: 270px;
+  width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px black;
+  background-color: lightgreen;
+}
+.productsDataContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
