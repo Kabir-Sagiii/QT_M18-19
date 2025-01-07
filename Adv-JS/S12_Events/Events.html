@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fn() {
+        alert("click event triggered");
+      }
+
+      function f1() {
+        var btnDomElement = document.querySelector("button");
+        btnDomElement.style.color = "red";
+
+        var imageDomelemet = document.querySelector("img");
+        imageDomelemet.src =
+          "https://i.pinimg.com/originals/3e/37/a1/3e37a1bd45c70cb972bf95105ba4adc6.jpg";
+
+        imageDomelemet.width = "300";
+      }
+
+      function f2() {
+        var btnDomElement = document.querySelector("button");
+        btnDomElement.style.color = "black";
+
+        var imageDomelemet = document.querySelector("img");
+        imageDomelemet.src =
+          "https://th.bing.com/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain";
+        imageDomelemet.width = "500";
+      }
+
+      function changeBG() {
+        setTimeout(() => {
+          document.querySelector("body").style.backgroundColor = "black";
+          document.querySelector("body").style.color = "white";
+          document.querySelector("img").style.display = "inline";
+        }, 3000);
+      }
+    </script>
+  </head>
+
+  <body onload="changeBG()">
+    <img
+      style="display: none"
+      src="https://th.bing.com/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain"
+      width="500"
+      height="300"
+      onmouseenter="f1()"
+      onmouseleave="f2()"
+    /><br />
+    <button onclick="fn()" onmouseenter="f1()" onmouseleave="f2()">
+      Submit
+    </button>
+  </body>
+</html>

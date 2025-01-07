@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html onclick="fnHTML()">
+  <head>
+    <style>
+      .parent {
+        border: 2px solid green;
+        width: 800px;
+        height: 400px;
+        padding: 50px;
+      }
+      .child {
+        border: 2px solid red;
+        width: 500px;
+        height: 300px;
+        padding: 50px;
+      }
+    </style>
+    <script>
+      function fnButton() {
+        alert("button is clicked");
+      }
+      function fnChild() {
+        alert("childDiv is clicked");
+      }
+      function fnParent() {
+        alert("Parentdiv is clicked");
+      }
+      function fnHTML() {
+        alert("fnHTML is called");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="parent" onclick="fnParent()">
+      <div class="child" onclick="fnChild()">
+        <button onclick="fnButton()">bubbling</button>
+      </div>
+    </div>
+  </body>
+</html>

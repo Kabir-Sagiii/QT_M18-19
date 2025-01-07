@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent {
+        border: 2px solid green;
+        width: 800px;
+        height: 400px;
+        padding: 50px;
+      }
+      .child {
+        border: 2px solid red;
+        width: 500px;
+        height: 300px;
+        padding: 50px;
+      }
+    </style>
+    <script>
+      function fnButton(event) {
+        alert("button is clicked");
+        console.log(event);
+        event.stopPropagation();
+      }
+      function fnChild(event) {
+        alert("childDiv is clicked");
+        event.stopPropagation();
+      }
+      function fnParent(event) {
+        alert("Parentdiv is clicked");
+        event.stopPropagation();
+      }
+      function fnHTML(event) {
+        alert("fnHTML is called");
+        event.stopPropagation();
+      }
+
+      function fn() {
+        var btnDom = document.querySelector("button");
+        btnDom.addEventListener("click", fnButton, false);
+
+        var divs = document.getElementsByClassName("child");
+        divs[0].addEventListener("click", fnChild, false);
+
+        var divsParent = document.getElementsByClassName("parent");
+        divsParent[0].addEventListener("click", fnParent, false);
+
+        document.querySelector("html").addEventListener("click", fnHTML, false);
+      }
+    </script>
+  </head>
+
+  <body onload="fn()">
+    <div class="parent">
+      <div class="child">
+        <button>capturing</button>
+      </div>
+    </div>
+  </body>
+</html>
